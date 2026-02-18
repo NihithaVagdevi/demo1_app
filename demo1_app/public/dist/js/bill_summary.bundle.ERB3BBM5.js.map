@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../apps/demo1_app/demo1_app/public/js/bill_summary.bundle.js"],
+  "sourcesContent": ["console.log(\"\u2705 bill_summary.bundle.js loaded\");\n\nfrappe.call({\n  method: \"demo1_app.programming_module1.page.bill_summary.bill_summary.get_summary\",\n  callback: function (r) {\n    if (r.message) {\n      document.getElementById(\"total-bills\").innerText =\n        \"Total Bills: \" + r.message.count;\n\n      document.getElementById(\"total-amount\").innerText =\n        \"Total Amount: \u20B9\" + r.message.total;\n    }\n  }\n});\n"],
+  "mappings": ";;AAAA,UAAQ,IAAI,sCAAiC;AAE7C,SAAO,KAAK;AAAA,IACV,QAAQ;AAAA,IACR,UAAU,SAAU,GAAG;AACrB,UAAI,EAAE,SAAS;AACb,iBAAS,eAAe,aAAa,EAAE,YACrC,kBAAkB,EAAE,QAAQ;AAE9B,iBAAS,eAAe,cAAc,EAAE,YACtC,yBAAoB,EAAE,QAAQ;AAAA,MAClC;AAAA,IACF;AAAA,EACF,CAAC;",
+  "names": []
+}

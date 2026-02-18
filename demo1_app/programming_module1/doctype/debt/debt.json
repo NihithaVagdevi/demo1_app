@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-28 11:49:42.267773",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "from_user",
+  "to_user",
+  "original_amount",
+  "paid_amount",
+  "remaining_amount",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "from_user",
+   "fieldtype": "Link",
+   "label": "From User",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "to_user",
+   "fieldtype": "Link",
+   "label": "To User",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "original_amount",
+   "fieldtype": "Currency",
+   "label": "Original Amount",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "paid_amount",
+   "fieldtype": "Currency",
+   "label": "Paid Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remaining_amount",
+   "fieldtype": "Int",
+   "label": "Remaining Amount"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Paid\nPartial\nUnpaid",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-03 13:27:04.429356",
+ "modified_by": "Administrator",
+ "module": "Programming Module1",
+ "name": "Debt",
+ "naming_rule": "By script",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

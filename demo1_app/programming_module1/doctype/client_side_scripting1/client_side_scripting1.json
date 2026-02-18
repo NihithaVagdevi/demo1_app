@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-27 14:58:27.499238",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_8nml",
+  "amended_from",
+  "enable",
+  "firstname",
+  "middlename",
+  "lastname",
+  "fullname",
+  "email",
+  "age",
+  "family_members1"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_8nml",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Client Side Scripting1",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "label": "Enable"
+  },
+  {
+   "fieldname": "firstname",
+   "fieldtype": "Data",
+   "label": "Firstname"
+  },
+  {
+   "fieldname": "middlename",
+   "fieldtype": "Data",
+   "label": "Middlename"
+  },
+  {
+   "fieldname": "lastname",
+   "fieldtype": "Data",
+   "label": "Lastname"
+  },
+  {
+   "fieldname": "fullname",
+   "fieldtype": "Data",
+   "label": "Fullname",
+   "read_only": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age"
+  },
+  {
+   "fieldname": "family_members1",
+   "fieldtype": "Data",
+   "label": "Family Members1"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-01-27 15:01:41.561984",
+ "modified_by": "Administrator",
+ "module": "Programming Module1",
+ "name": "Client Side Scripting1",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

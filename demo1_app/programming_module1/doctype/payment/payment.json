@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-30 10:56:30.944213",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "payment_details_section",
+  "from_user",
+  "to_user",
+  "debt",
+  "expense",
+  "amount_paid",
+  "due_amount",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "from_user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "From User",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_user",
+   "fieldtype": "Link",
+   "label": "To User",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "debt",
+   "fieldtype": "Link",
+   "label": "Debt",
+   "options": "Debt"
+  },
+  {
+   "fieldname": "expense",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Expense",
+   "options": "Expense"
+  },
+  {
+   "fieldname": "payment_details_section",
+   "fieldtype": "Section Break",
+   "label": "Payment Details"
+  },
+  {
+   "fieldname": "amount_paid",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Paid Amount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Payment",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "due_amount",
+   "fieldtype": "Currency",
+   "label": "Due Amount",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-01-30 16:13:00.309436",
+ "modified_by": "Administrator",
+ "module": "Programming Module1",
+ "name": "Payment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

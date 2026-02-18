@@ -23,6 +23,9 @@ app_license = "mit"
 
 # Includes in <head>
 # ------------------
+app_include_js=["https://unpkg.com/vue@3/dist/vue.global.js"]
+app_include_js = "/assets/demo1_app/js/bill_summary.bundle.js"
+
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/demo1_app/css/demo1_app.css"
@@ -247,3 +250,10 @@ app_license = "mit"
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+
+
+doc_events = {
+    "Sales Invoice": {
+        "validate": "demo1_app.salesinvoice.validate_sales_invoice"
+    }
+}
